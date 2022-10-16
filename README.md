@@ -93,7 +93,22 @@
    - Vậy thì bây giờ mình sẽ vào URL/source xem sao.
    
    ![image](https://user-images.githubusercontent.com/89735990/195982685-c065d1c0-7c74-463f-8370-a41e4d574165.png)
-
+   
+   - Flag được chia làm 3 part, oke vậy bây h ta sẽ giải quyết từng part.
+   ## Part 1:
+   - Ta thấy được:
+```python
+    query = request.args.get('query')
+    if query is not None:
+        if (query == 'getFlag'):
+            return "Hello, this is flag: " + PART1
+        else:    
+            return "This is wrong value"
+    else:
+        return "Missing parameter"
+```
+   - Với method get, ta nhập vào url `/part1?query=getFlag`
+   FLag : ```
  
 
  
